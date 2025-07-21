@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Service</string>
+    <string name="start_button_text">Start Service</string>
+    <string name="stop_button_text">Stop Service</string>
+    <string name="app_version">Version 1.0</string>
+
+</resources>
