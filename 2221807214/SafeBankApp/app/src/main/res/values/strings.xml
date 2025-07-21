@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SafeBankApp</string>
+    <string name="app_logo">شعار التطبيق</string>
+    <string name="login_title">تسجيل الدخول</string>
+    <string name="username_hint">رقم المستخدم</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="login">تسجيل</string>
+    <string name="login_desc">زر تسجيل الدخول</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="detecting_face">جارِ الكشف…</string>
+
+</resources>

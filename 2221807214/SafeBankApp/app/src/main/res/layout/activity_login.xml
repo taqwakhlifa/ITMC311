@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:padding="24dp">
+
+    <!-- App Logo - Now properly anchored at top -->
+    <ImageView
+        android:id="@+id/ivAppLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"/>
+
+    <!-- Email Input Field - Now properly below logo -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAppLogo"
+        android:layout_marginTop="32dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/sky_blue"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="البريد الإلكتروني"
+            android:fontFamily="@font/cairo_variable"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Input Field - Now properly below email -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailLayout"
+        android:layout_marginTop="16dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/sky_blue"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="كلمة المرور"
+            android:fontFamily="@font/cairo_variable"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sign In Button - Now properly below password -->
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/passwordLayout"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/dark_blue"
+        android:text="تسجيل الدخول"
+        android:fontFamily="@font/cairo_variable"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <!-- Forgot Password - Now properly below button -->
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="نسيت كلمة المرور؟"
+        android:fontFamily="@font/cairo_variable"
+        android:textColor="@color/sky_blue"
+        android:textSize="14sp"/>
+</RelativeLayout>

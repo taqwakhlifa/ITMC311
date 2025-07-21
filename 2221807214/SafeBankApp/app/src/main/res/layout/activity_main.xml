@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/beige"
+    android:layoutDirection="rtl">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/gray_blue"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="104dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/cairo_variable"
+            android:gravity="center"
+            android:text="الحساب الجاري"
+            android:textColor="@color/light_gray"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textDirection="rtl" />
+    </LinearLayout>
+
+    <!-- Banner -->
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/buttonList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layoutDirection="rtl">
+
+
+            <LinearLayout
+                android:id="@+id/btnAccount"
+                style="@style/DashboardButtonStyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/user"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    style="@style/DashboardButtonText"
+                    android:text="الحساب الجاري"
+                    android:fontFamily="@font/cairo_variable"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_blue" />
+            </LinearLayout>
+
+            <!-- باقات مصرفي -->
+            <LinearLayout
+                android:id="@+id/btnPackage"
+                style="@style/DashboardButtonStyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/packagen"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    style="@style/DashboardButtonText"
+                    android:text="باقات مصرفي"
+                    android:fontFamily="@font/cairo_variable"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_blue" />
+            </LinearLayout>
+
+            <!-- خدمة الطلبات -->
+            <LinearLayout
+                android:id="@+id/btnOrders"
+                style="@style/DashboardButtonStyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/order"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    style="@style/DashboardButtonText"
+                    android:text="خدمة الطلبات"
+                    android:fontFamily="@font/cairo_variable"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_blue" />
+            </LinearLayout>
+
+            <!-- تحديث البيانات -->
+            <LinearLayout
+                android:id="@+id/btnUpdate"
+                style="@style/DashboardButtonStyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/social"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    style="@style/DashboardButtonText"
+                    android:text="تحديث البيانات"
+                    android:fontFamily="@font/cairo_variable"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_blue" />
+            </LinearLayout>
+
+            <!-- حساب الدولار -->
+            <LinearLayout
+                android:id="@+id/btnDollarAccount"
+                style="@style/DashboardButtonStyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/accounting"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    style="@style/DashboardButtonText"
+                    android:text="حساب الدولار"
+                    android:fontFamily="@font/cairo_variable"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_blue" />
+            </LinearLayout>
+
+            <!-- NFC -->
+            <LinearLayout
+                android:id="@+id/btnNFC"
+                style="@style/DashboardButtonStyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/qrlogo"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    style="@style/DashboardButtonText"
+                    android:text="مصرفي باي QR"
+                    android:fontFamily="@font/cairo_variable"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_blue" />
+            </LinearLayout>
+
+            <!-- الاعدادت -->
+            <LinearLayout
+                android:id="@+id/btnSettings"
+                style="@style/DashboardButtonStyle">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/settings"
+                    android:layout_marginEnd="12dp" />
+
+                <TextView
+                    style="@style/DashboardButtonText"
+                    android:text="الإعدادات"
+                    android:fontFamily="@font/cairo_variable"
+                    android:textStyle="bold"
+                    android:textColor="@color/gray_blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
